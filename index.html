@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pod-Ed | From Documents to Podcasts</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for standard icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Lenis smooth scrolling -->
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/png" href="./assets/logo-app.png">
+</head>
+
+<body>
+
+    <!-- HEADER / NAVBAR -->
+    <header>
+        <div class="logo">
+            <img width="50" src="./assets/logo-app.png" alt="Logo">
+            <span>Pod-Ed</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How it Works</a>
+            <a href="#pricing">Pricing</a>
+        </nav>
+        <a href="#get-app" class="cta-button">Try Pod-Ed Free</a>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Turn your Documents into <i>Podcasts</i> in Seconds.</h1>
+        <p>Harness the power of AI to transform lengthy PDFs, articles, and web pages into realistic, multi-speaker
+            conversational podcasts. Listen on the go.</p>
+
+        <!-- MOCKUP WINDOW (CSS ONLY) -->
+        <div class="app-mockup">
+            <div class="app-header">
+                <div class="mac-btn close"></div>
+                <div class="mac-btn min"></div>
+                <div class="mac-btn max"></div>
+                <div
+                    style="margin-left:auto; margin-right:auto; font-size: 14px; color: var(--text-muted); font-weight: 500;">
+                    Pod-Ed Studio
+                </div>
+                <div style="width: 48px;"></div> <!-- Spacer -->
+            </div>
+            <div class="app-body">
+                <div class="app-sidebar">
+                    <div class="app-sidebar-item"></div>
+                    <div class="app-sidebar-item"></div>
+                    <div class="app-sidebar-item active"></div>
+                    <div class="app-sidebar-item"></div>
+                </div>
+                <div class="app-content">
+                    <div class="mock-title"></div>
+                    <div class="mock-title" style="width: 40%;"></div>
+
+                    <div class="mock-player-box" style="margin-top: auto;">
+                        <div class="mock-waveform">
+                            <!-- Animated CSS Waveform -->
+                            <div class="mock-bar"></div>
+                            <div class="mock-bar"></div>
+                            <div class="mock-bar"></div>
+                            <div class="mock-bar"></div>
+                            <div class="mock-bar"></div>
+                            <div class="mock-bar"></div>
+                            <div class="mock-bar"></div>
+                            <div class="mock-bar"></div>
+                            <div class="mock-bar"></div>
+                            <div class="mock-bar"></div>
+                        </div>
+                        <div class="mock-controls">
+                            <div class="mock-btn"></div>
+                            <div class="mock-btn play"></div>
+                            <div class="mock-btn"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES BENTO GRID -->
+    <section id="features" class="features">
+        <div class="features-header">
+            <h2>Everything you need.</h2>
+            <p style="color: var(--text-muted);">A powerful pipeline from extraction to local audio generation.</p>
+        </div>
+
+        <div class="bento-grid">
+            <div class="bento-card">
+                <div class="card-icon" style="color: var(--accent-primary);">
+                    <i class="fa-solid fa-file-pdf"></i>
+                </div>
+                <div>
+                    <h3>Universal Import</h3>
+                    <p>Upload PDFs, raw text, or just paste a URL. Our scraper handles the rest.</p>
+                </div>
+            </div>
+
+            <div class="bento-card wide">
+                <div class="card-icon" style="color: var(--accent-secondary);">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div>
+                    <h3>LLM Script Generation</h3>
+                    <p>We automatically construct dynamic, engaging dialogues between multiple speakers tailored exactly
+                        to the source material's length.</p>
+                </div>
+            </div>
+
+            <div class="bento-card wide">
+                <div class="card-icon" style="color: var(--accent-tertiary);">
+                    <i class="fa-solid fa-language"></i>
+                </div>
+                <div>
+                    <h3>Ultra-Realistic Voices</h3>
+                    <p>Powered by Coqui XTTS & Fish Audio API. Experience human-like pauses, breathing, and zero-shot
+                        voice cloning in multiple languages.</p>
+                </div>
+            </div>
+
+            <div class="bento-card card-spotify">
+                <div class="card-icon">
+                    <i class="fa-brands fa-spotify"></i>
+                </div>
+                <div>
+                    <h3>Direct to Spotify</h3>
+                    <p>Export your result directly to Spotify for Podcasters via Supabase XML RSS feeds in a single
+                        click.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="how-it-works-header">
+            <h2>How it works</h2>
+            <p style="color: var(--text-muted);">From raw document to a fully mixed podcast in 3 automated steps.</p>
+        </div>
+
+        <div class="steps-container">
+            <!-- Step 1 -->
+            <div class="step-row">
+                <div class="step-text">
+                    <h3><span>1</span> Upload your Knowledge</h3>
+                    <p>Start by providing the source material. It can be a lengthy PDF report, a web URL, or plain text.
+                        Our internal engine extracts and structures the core information automatically.</p>
+                </div>
+                <div class="mock-ui-container">
+                    <div style="font-size: 0.9rem; font-weight: 700; margin-bottom: 1rem;">Ajouter une source</div>
+                    <div class="mock-upload-box">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <p>Drag & Drop or click to browse</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step-row">
+                <div class="step-text">
+                    <h3 style="color: var(--accent-secondary);"><span>2</span> Review the LLM Script</h3>
+                    <p>The AI writes a conversational script based on the documents. You can review and edit the
+                        dialogue live before pushing it to the voice synthesis engine.</p>
+                </div>
+                <div class="mock-ui-container">
+                    <div style="font-size: 0.9rem; font-weight: 700; margin-bottom: 1rem; color: #fff;">Script généré
+                    </div>
+                    <div class="mock-script-box">
+                        <div class="mock-dialogue">
+                            <div class="speaker paul">Paul FR</div>
+                            <div class="text">Alors, on parle de la dernière mise à jour ?</div>
+                        </div>
+                        <div class="mock-dialogue">
+                            <div class="speaker eva">Eva FR</div>
+                            <div class="text">Oui, les nouvelles voix générées sont incroyables.</div>
+                        </div>
+                        <div class="mock-dialogue">
+                            <div class="speaker paul">Paul FR</div>
+                            <div class="text">Exactement ! Tout est traité localement, sans quotas.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step-row">
+                <div class="step-text">
+                    <h3 style="color: var(--accent-spotify);"><span>3</span> Listen & Export to Spotify</h3>
+                    <p>The audio is generated using high-fidelity TTS models like Fish Audio. With one click, your
+                        podcast is packaged with covers and RSS feeds, and exported directly to Spotify.</p>
+                </div>
+                <div class="mock-ui-container">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                        <h4 style="font-size: 1.2rem; font-weight: 700;">Podcast Généré</h4>
+                        <span
+                            style="background: rgba(29,185,84,0.2); color: #1DB954; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">Prêt</span>
+                    </div>
+                    <div class="mock-player-mini">
+                        <div class="mock-play-btn"><i class="fa-solid fa-play" style="margin-left: 2px;"></i></div>
+                        <div class="mock-progress-bar">
+                            <div class="mock-progress-fill"></div>
+                        </div>
+                        <div style="font-size: 0.8rem; font-family: monospace;">1:14 / 2:45</div>
+                    </div>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                        <button
+                            style="flex: 1; background: var(--accent-spotify); color: #fff; border: none; padding: 0.8rem; border-radius: 8px; font-weight: 700; cursor: pointer;">
+                            <i class="fa-brands fa-spotify"></i> Export Spotify
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GET THE APP SECTION (Waitlist) -->
+    <section id="get-app" class="get-app-section">
+        <div class="get-app-container">
+            <h2>Ready to transform your content?</h2>
+            <p>Join the waitlist to receive early access to the Pod-Ed desktop application directly in your inbox.</p>
+            
+            <form id="waitlist-form" class="waitlist-form">
+                <input type="email" id="email-input" placeholder="Enter your email address" required>
+                <button type="submit" class="cta-button submit-btn">Get the App</button>
+            </form>
+            
+            <div id="success-message" class="success-message hidden">
+                <i class="fa-solid fa-circle-check"></i>
+                Awesome! We've added your email to our list. You'll hear from us soon.
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-top">
+            <div class="logo">
+                <img width="50" src="./assets/logo-app.png" alt="Logo">
+                <span>Pod-Ed</span>
+            </div>
+            <div style="color: var(--text-muted); max-width: 300px;">
+                Empowering learners and creators to transition from text to speech in minutes.
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>&copy; 2026 Pod-Ed. All rights reserved.</div>
+            <div style="display:flex; gap: 2rem;">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script for Smooth Scrolling -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const lenis = new Lenis({
+                duration: 1.2,
+                easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+                direction: 'vertical',
+                gestureDirection: 'vertical',
+                smooth: true,
+            });
+
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+
+            requestAnimationFrame(raf);
+        });
+
+        // Waitlist form handler
+        document.getElementById('waitlist-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email-input').value;
+            if(email) {
+                // Hide form and show success message
+                this.style.display = 'none';
+                document.getElementById('success-message').classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+
+</html>
